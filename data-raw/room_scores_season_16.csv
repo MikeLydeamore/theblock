@@ -1,0 +1,49 @@
+"week","area_s","scores","harry_tash","sarah_george","daniel_jade","luke_jasmin","jimmy_tam"
+"1","Guest Bedroom","Darren",8.5,7,9,8,9
+"1","Guest Bedroom","Shaynna",8,7,8,6,8
+"1","Guest Bedroom","Neale",7.5,7,8,6.5,8.5
+"1","Guest Bedroom","Total",24,21,25,20.5,25.5
+"2","Guest Ensuite","Darren",7.5,9,8.5,9,9.5
+"2","Guest Ensuite","Shaynna",6.5,9,7,8.5,9.5
+"2","Guest Ensuite","Neale",7.5,9,7.5,8,9.5
+"2","Guest Ensuite","Total",21.5,27,23,25.5,28.5
+"3","Master Bedroom & Walk-in-Robe","Darren",8.5,8,8.5,8.5,7
+"3","Master Bedroom & Walk-in-Robe","Shaynna",8.5,7.5,8.5,8.5,7
+"3","Master Bedroom & Walk-in-Robe","Neale",8.5,7.5,8,8,7.5
+"3","Master Bedroom & Walk-in-Robe","Total",25.5,23,25,25,21.5
+"4","Master Ensuite","Darren",9.5,9.5,9.5,10,9.5
+"4","Master Ensuite","Shaynna",9.5,9,9.5,9.5,9.5
+"4","Master Ensuite","Neale",9.5,10,9,9.5,9
+"4","Master Ensuite","Total",28.5,28.5,28,29,NA
+"5","Guest Bedroom & Bathroom","Darren",7,9.5,8.5,10,10
+"5","Guest Bedroom & Bathroom","Shaynna",7.5,9.5,8.5,10,9.5
+"5","Guest Bedroom & Bathroom","Neale",9,10,8.5,10,9.5
+"5","Guest Bedroom & Bathroom","Total",23.5,29,25.5,30,29
+"6","Kitchen","Darren",9.5,9.5,9.5,9.5,9.5
+"6","Kitchen","Shaynna",9.5,9,9.5,9,10
+"6","Kitchen","Neale",10,9.5,9.5,9.5,9.5
+"6","Kitchen","Total",29,28,NA,28,29
+"7","Living & Dining","Darren",9.5,8.5,10,8.5,7
+"7","Living & Dining","Shaynna",9.5,8,9,8,7.5
+"7","Living & Dining","Neale",9.5,8.5,9,8,7
+"7","Living & Dining","Total",28.5,25,28,24.5,21.5
+"8","Upstairs[e]","Darren",9.5,9.5,9.5,9,8.5
+"8","Upstairs[e]","Shaynna",9.5,9.5,9,8.5,8.5
+"8","Upstairs[e]","Neale",9,9.5,9,8.5,8.5
+"8","Upstairs[e]","Total",28,28.5,27.5,26,25.5
+"9","Stairway, Hallway & Laundry","Darren",9,8.5,9.5,9.5,9.5
+"9","Stairway, Hallway & Laundry","Shaynna",8,8,7.5,9.5,9.5
+"9","Stairway, Hallway & Laundry","Neale",8,8.5,8,9.5,9
+"9","Stairway, Hallway & Laundry","Total",25,25,25,28.5,NA
+"10","Front Garden & Facade","Darren",8.5,10,9.5,9.5,9.5
+"10","Front Garden & Facade","Shaynna",8,9.5,9,9.5,9.5
+"10","Front Garden & Facade","Neale",9.5,9.5,9.5,9,10
+"10","Front Garden & Facade","Total",26,29,28,28,29
+"11","Studio & Garage","Darren",6.5,9.5,8.5,8.5,10
+"11","Studio & Garage","Shaynna",7,10,8.5,8.5,9.5
+"11","Studio & Garage","Neale",6.5,10,8.5,8.5,9.5
+"11","Studio & Garage","Total",20,29.5,25.5,25.5,29
+"12","Backyard","Darren",7.5,10,8,9.5,9
+"12","Backyard","Shaynna",7.5,10,8,10,9
+"12","Backyard","Neale",7.5,10,8,10,9.5
+"12","Backyard","Total",22.5,30,24,29.5,27.5

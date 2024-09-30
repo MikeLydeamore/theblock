@@ -1,0 +1,31 @@
+"x1","x2","x3","x4","x5","x6","x7"
+"Week","Area(s)","Scores",NA,NA,NA,NA
+"1","1st Bedroom","Darren",7,7,7.5,6
+"1","1st Bedroom","Shaynna",6,7,7,4
+"1","1st Bedroom","Neale",6,7.5,8,4
+"1","1st Bedroom","Total",19,21.5,22.5,14
+"2","2nd Bedroom","Darren",8,8,7.5,7
+"2","2nd Bedroom","Shaynna",7.5,8,7,6.5
+"2","2nd Bedroom","Neale",7.5,8,7,6.5
+"2","2nd Bedroom","Total",23,24,21.5,20
+"3","Bathroom","Darren",7.5,8,8.5,8.5
+"3","Bathroom","Shaynna",7,8,7.5,7.5
+"3","Bathroom","Neale",7.5,8,9,8
+"3","Bathroom","Total",22,24,25,24
+"4","Hallway, Lounge & Linen Closet","Darren",8,6.5,6.5,8
+"4","Hallway, Lounge & Linen Closet","Shaynna",9,6,6,9
+"4","Hallway, Lounge & Linen Closet","Neale",9,5.5,6,8
+"4","Hallway, Lounge & Linen Closet","Total",26,18,18.5,25
+"5","Kitchen & Laundry","Darren",9.5,7.5,9.5,8
+"5","Kitchen & Laundry","Shaynna",10,7.5,10,8
+"5","Kitchen & Laundry","Neale",NA,8,10,9
+"5","Kitchen & Laundry","Total",28.5,23,29.5,25
+"6","Living Room","Darren",8,7,7,8.5
+"6","Living Room","Shaynna",7.5,7,7,9
+"6","Living Room","Neale",8,6,7,9
+"6","Living Room","Total",23.5,20,21,26.5
+"7","Exteriors","Darren",9,9,9,8
+"7","Exteriors","Shaynna",9.5,9,9,7.5
+"7","Exteriors","Neale",9,9,8,7.5
+"7","Exteriors","John",8,8.5,8,7
+"7","Exteriors","Total",35.5,35.5,34,30
