@@ -1,0 +1,48 @@
+---
+title: "theblock"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{theblock}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(theblock)
+library(ggplot2)
+library(dplyr)
+```
+
+There are two datasets provided by this package:
+
+* `room_results`: contains the weekly room scores, by judge and couple. Note that this includes all of the changes in scoring that have occurred over many years on the block, such as contestant voting and substitute judges. You might notice some big scores - it's almost certainly to do with this
+* `auction_results`: contains the results of the auctions, including reserve, sale price, total profit, and auction rank.
+
+We can get the number of room wins by looking in the `room_results` dataset as follows:
+
+```{r}
+room_wins <- room_results |>
+  filter(judge == "Total") |>
+  group_by(season, week, area) |>
+  summarise(winning_score = max(score), winning_team = team[which.max(score)]) |>
+  group_by(season) |>
+  count(winning_team)
+```
+
+We can then compare 
+
+```{r}
+auction_results |>
+  select(season, rank, couple) |>
+  full_join(room_wins, by = c("season"="season", "couple"="winning_team")) |>
+  ggplot(aes(x=rank, y = n)) +
+  geom_jitter() +
+  labs(x = "Auction profit rank", y = "Number of room wins")
+```
