@@ -11,19 +11,24 @@ page <- read_html(url)
 get_scores_table <- function(webpage) {
   tbls <- html_nodes(webpage, "table")
   
-  scores <- html_table(tbls[grep("Judge", tbls, ignore.case = TRUE)], fill = TRUE)[[1]]
+  scores <- html_table(tbls[grep("Judges' Scores", tbls, ignore.case = TRUE)], fill = TRUE)[[1]]
 
-  colnames(scores) <- scores[1,]
+  if (!"Week" %in% colnames(scores) | "Teams" %in% colnames(scores)) {
+    colnames(scores) <- scores[1,]
+    scores <- scores[-1,]
+  }
   
-  scores <- scores[-1,]
   
   scores |>
     janitor::clean_names() |>
     mutate(
       across(!(1:3), ~gsub("\\[\\d+\\]", "", .x)),
       across(!(1:3),  ~ gsub("½", ".5", .x)),
+      across(!(1:3), ~ gsub("\\^.*", "", .x)),
+      across(!(1:3), ~ gsub("\\*", "", .x)),
       across(!(1:3),  as.numeric),
-    )
+    ) |>
+    rename(area = "area_s")
 }
 
 convert_money <- function(money_str) {
@@ -96,11 +101,11 @@ for (season in seasons) {
     row.names = FALSE
   )
 
-  write.csv(
-    x = auctions, 
-    file = paste0("data-raw/auction_results_season_", season, ".csv"),
-    row.names = FALSE
-  )
+  # write.csv(
+  #   x = auctions, 
+  #   file = paste0("data-raw/auction_results_season_", season, ".csv"),
+  #   row.names = FALSE
+  # )
 
 }
 

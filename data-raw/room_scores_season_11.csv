@@ -1,12 +1,45 @@
-"week","room","winner","score","lowest","score_2"
-"1","Main Ensuite","Dean & Shay",28.5,NA,22.5
-"2","1st Guest Bedroom & Ensuite","Dean & Shay",27.5,NA,18
-"3","Master Bedroom & Walk-in Robe","Suzi & Voni",30,NA,18.5
-"4","2nd Guest Bedroom & Ensuite","Kingi & Caro",28.5,NA,20.5
-"5","Study, Guest Powder Room & Laundry","Kingi & Caro",28.5,NA,19.5
-"6","Living Room","Luke & Ebony",23.5,NA,NA
-"7","Kitchen","Kingi & Caro",29,NA,25
-"8","Dining Room & Foyer","Andrew & Whitney",26,NA,16
-"9","Terrace & Re-Do Room","Dean & Shay",28.5,NA,21
-"10","Challenge Apartment: Room 1","Dean & Shay",29,NA,22.5
-"11","Challenge Apartment: Room 2","Dean & Shay",30,NA,27.5
+"week","area","scores","kingi_caro","andrew_whitney","suzi_voni","luke_ebony","dean_shay"
+"1","Main Ensuite","Darren",9.5,9,8,7.5,9.5
+"1","Main Ensuite","Shaynna",9,9,8,7.5,9.5
+"1","Main Ensuite","Neale",9,8.5,8,7.5,9.5
+"1","Main Ensuite","Total",27.5,26.5,24,22.5,28.5
+"2","1st Guest Bedroom & Ensuite","Darren",9,6.5,8.5,6,9
+"2","1st Guest Bedroom & Ensuite","Shaynna",9,6,7,6,9
+"2","1st Guest Bedroom & Ensuite","Neale",8.5,6,7.5,6,9.5
+"2","1st Guest Bedroom & Ensuite","Total",26.5,18.5,23,18,27.5
+"3","Master Bedroom & Walk-in Robe","Darren",9,6,10,7.5,8
+"3","Master Bedroom & Walk-in Robe","Shaynna",9,6,10,7,8
+"3","Master Bedroom & Walk-in Robe","Neale",9.5,6.5,10,7.5,7
+"3","Master Bedroom & Walk-in Robe","Total",27.5,18.5,30,22,23
+"4","2nd Guest Bedroom & Ensuite","Darren",9,8.5,9,7,9
+"4","2nd Guest Bedroom & Ensuite","Shaynna",9.5,8,9.5,6.5,8.5
+"4","2nd Guest Bedroom & Ensuite","Neale",10,7,9.5,7,9
+"4","2nd Guest Bedroom & Ensuite","Total",28.5,23.5,28,20.5,26.5
+"5","Study, Guest Powder Room & Laundry","Darren",9.5,9,7,9,8.5
+"5","Study, Guest Powder Room & Laundry","Shaynna",9.5,8,6.5,9,8
+"5","Study, Guest Powder Room & Laundry","Neale",9.5,7.5,6,9.5,9
+"5","Study, Guest Powder Room & Laundry","Total",28.5,24.5,19.5,27.5,25.5
+"6","Living Room","Darren",7,8,6,7,4
+"6","Living Room","Shaynna",6.5,7.5,6,8,4
+"6","Living Room","Neale",6.5,7.5,6,8.5,4
+"6","Living Room","Total",20,23,18,23.5,NA
+"7","Kitchen","Romy",9.5,8.5,8.5,9,9.5
+"7","Kitchen","Shaynna",9.5,8.5,8.5,8.5,9.5
+"7","Kitchen","Neale",10,8.5,8,9.5,9.5
+"7","Kitchen","Total",29,25.5,25,27,28.5
+"8","Dining Room & Foyer","Darren",8.5,9,6,7,7.5
+"8","Dining Room & Foyer","Shaynna",8.5,8.5,5,6,6.5
+"8","Dining Room & Foyer","Neale",8.5,8.5,5,6,7
+"8","Dining Room & Foyer","Total",25.5,26,16,19,21
+"9","Terrace & Re-Do Room[f]","Darren",9,8,7,8,9
+"9","Terrace & Re-Do Room[f]","Shaynna",9,8,7,8,9.5
+"9","Terrace & Re-Do Room[f]","Neale",9,8,7,8,10
+"9","Terrace & Re-Do Room[f]","Total",27,24,21,24,28.5
+"10","Challenge Apartment: Room 1","Darren",9.5,8,7.5,8.5,9.5
+"10","Challenge Apartment: Room 1","Shaynna",9.5,8,7,8.5,9.5
+"10","Challenge Apartment: Room 1","Neale",9.5,8,8,8.5,10
+"10","Challenge Apartment: Room 1","Total",28.5,24,22.5,25.5,29
+"11","Challenge Apartment: Room 2","Darren",9.5,10,9.5,9.5,10
+"11","Challenge Apartment: Room 2","Shaynna",9,10,10,9,10
+"11","Challenge Apartment: Room 2","Neale",9,9.5,9.5,9.5,10
+"11","Challenge Apartment: Room 2","Total",27.5,29.5,29,28,30

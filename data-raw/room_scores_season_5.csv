@@ -1,4 +1,5 @@
-"x1","front_room","shaynna","x6","x5","x5_2","x5_3"
+"week","area","scores","dale_sophie","mike_andrew","brad_lara","dan_dani"
+1,"Front Room","Shaynna",6,5,5,5
 1,"Front Room","John",5,5,5,6
 1,"Front Room","Neale",6,5.5,5,6.5
 1,"Front Room","Total",17,15.5,15,17.5
@@ -9,11 +10,11 @@
 3,"Guest Bedroom & Powder Room","Lisa",7.5,7.5,7,7
 3,"Guest Bedroom & Powder Room","John",7,8,7.5,7.5
 3,"Guest Bedroom & Powder Room","Neale",7,7.5,7.5,8
-3,"Guest Bedroom & Powder Room","Total",21.5,23,22,NA
+3,"Guest Bedroom & Powder Room","Total",21.5,23,22,23.5
 4,"Main Bathroom","Shaynna",7,7,8,8
 4,"Main Bathroom","John",7,7,8,8
 4,"Main Bathroom","Neale",7.5,7,9,8
-4,"Main Bathroom","Total",21.5,21,NA,24
+4,"Main Bathroom","Total",21.5,21,26,24
 5,"Guest Bedroom & Hallway","Shaynna",9,6.5,7.5,6
 5,"Guest Bedroom & Hallway","Darren",9,7,8,6.5
 5,"Guest Bedroom & Hallway","Neale",9,6.5,7.5,6.5
@@ -25,11 +26,11 @@
 7,"Living & Dining Room","Shaynna",8,7.5,7.5,7.5
 7,"Living & Dining Room","John",7,7.5,7.5,8
 7,"Living & Dining Room","Neale",7,7.5,7.5,8
-7,"Living & Dining Room","Total",NA,22.5,22.5,NA
+7,"Living & Dining Room","Total",23,22.5,22.5,24.5
 8,"Kitchen","Shaynna",9.5,9,8.5,8.5
 8,"Kitchen","John",9.5,9,8.5,8
 8,"Kitchen","Neale",8.5,8,8,8
-8,"Kitchen","Total",27.5,NA,25,24.5
+8,"Kitchen","Total",27.5,28,25,24.5
 9,"Room Saver","Shaynna",8,6.5,7.5,7.5
 9,"Room Saver","John",9,6.5,7.5,8
 9,"Room Saver","Neale",9,6,7,7
