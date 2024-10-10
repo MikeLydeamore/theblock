@@ -15,3 +15,16 @@ auction_results <- lapply(seasons, function(season) {
 }) |> dplyr::bind_rows()
 
 usethis::use_data(auction_results, overwrite = TRUE)
+
+
+room_results <- lapply(seasons, function(season) {
+  result <- readr::read_csv(paste0("data-raw/room_scores_season_", season, ".csv")) |>
+    tidyr::pivot_longer(!c(week, area, scores), names_to = "team", values_to = "score") |>
+    rename(judge = "scores")
+
+  result$season <- season
+
+  return (result)
+}) |> dplyr::bind_rows()
+
+usethis::use_data(room_results, overwrite = TRUE)
