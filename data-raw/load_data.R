@@ -2,7 +2,7 @@
 
 seasons <- 5:19
 
-lapply(seasons, function(season) {
+auction_results <- lapply(seasons, function(season) {
   result <- readr::read_csv(paste0("data-raw/auction_results_season_", season, ".csv"))
 
   if (any(is.na(result$rank))) {
@@ -13,3 +13,5 @@ lapply(seasons, function(season) {
 
   return (result)
 }) |> dplyr::bind_rows()
+
+usethis::use_data(auction_results, overwrite = TRUE)
