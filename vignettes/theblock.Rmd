@@ -31,9 +31,11 @@ We can get the number of room wins by looking in the `room_results` dataset as f
 room_wins <- room_results |>
   filter(judge == "Total") |>
   group_by(season, week, area) |>
-  summarise(winning_score = max(score), winning_team = team[which.max(score)]) |>
+  reframe(winning_score = max(score), winning_team = team[score == winning_score]) |>
   group_by(season) |>
   count(winning_team)
+
+room_wins |> filter(is.na(winning_team))
 ```
 
 We can then compare 
@@ -42,7 +44,20 @@ We can then compare
 auction_results |>
   select(season, rank, couple) |>
   full_join(room_wins, by = c("season"="season", "couple"="winning_team")) |>
+  replace_na(list(n = 0)) |>
   ggplot(aes(x=rank, y = n)) +
-  geom_jitter() +
+  geom_beeswarm() +
   labs(x = "Auction profit rank", y = "Number of room wins")
+```
+
+
+
+```{r}
+result <- auction_results |>
+  select(season, rank, couple) |>
+  full_join(room_wins, by = c("season"="season", "couple"="winning_team")) |>
+  replace_na(list(n = 0))
+
+kruskal.test(result$rank, result$n)
+cor.test(result$rank, result$n)
 ```

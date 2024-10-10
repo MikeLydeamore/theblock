@@ -26,9 +26,12 @@ get_scores_table <- function(webpage) {
       across(!(1:3),  ~ gsub("½", ".5", .x)),
       across(!(1:3), ~ gsub("\\^.*", "", .x)),
       across(!(1:3), ~ gsub("\\*", "", .x)),
-      across(!(1:3),  as.numeric),
+      across(!(1:3), ~gsub("\\(.*?\\)", "", .x)),
+      across(!(1:3), ~gsub("\\[.*?\\]", "", .x)),
+      #across(!(1:3),  as.numeric),
     ) |>
-    rename(area = "area_s")
+    rename(area = "area_s") |>
+    filter( week == 9)
 }
 
 convert_money <- function(money_str) {
