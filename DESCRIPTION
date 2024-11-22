@@ -19,3 +19,4 @@ Suggests:
     rmarkdown,
     tidyr
 VignetteBuilder: knitr
+URL: http://www.michaellydeamore.com/theblock/
