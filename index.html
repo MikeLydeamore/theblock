@@ -5,14 +5,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>What the Package Does (One Line, Title Case) • theblock</title>
+<title>The Block TV Data • theblock</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="What the Package Does (One Line, Title Case)">
-<meta name="description" content="What the package does (one paragraph).">
-<meta property="og:description" content="What the package does (one paragraph).">
+<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="The Block TV Data">
+<meta name="description" content="Weekly room wins, by team and judge, and auction results for Seasons 5 to 19 of the Australian Reality TV Series The Block.">
+<meta property="og:description" content="Weekly room wins, by team and judge, and auction results for Seasons 5 to 19 of the Australian Reality TV Series The Block.">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -48,11 +48,57 @@
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header"><h1 id="theblock">theblock<a class="anchor" aria-label="anchor" href="#theblock"></a>
 </h1></div>
+<!-- badges: start -->
+<!-- badges: end -->
+<p><code>theblock</code> provides data on Weekly room wins, by team and judge, and auction results for Seasons 5 to 19 of the Australian Reality TV Series “The Block”.</p>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
+<p>You can install the development version of theblock from <a href="https://github.com/" class="external-link">GitHub</a> with:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># install.packages("pak")</span></span>
+<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"MikeLydeamore/theblock"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+</h2>
+<p>This is a basic example which shows you how to solve a common problem:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="http://www.michaellydeamore.com/theblock/">theblock</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Data on weekly room wins</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">room_results</span><span class="op">)</span></span>
+<span><span class="co">#&gt;   week       area   judge      couple score season</span></span>
+<span><span class="co">#&gt; 1    1 Front Room Shaynna dale_sophie     6      5</span></span>
+<span><span class="co">#&gt; 2    1 Front Room Shaynna mike_andrew     5      5</span></span>
+<span><span class="co">#&gt; 3    1 Front Room Shaynna   brad_lara     5      5</span></span>
+<span><span class="co">#&gt; 4    1 Front Room Shaynna    dan_dani     5      5</span></span>
+<span><span class="co">#&gt; 5    1 Front Room    John dale_sophie     5      5</span></span>
+<span><span class="co">#&gt; 6    1 Front Room    John mike_andrew     5      5</span></span>
+<span></span>
+<span><span class="co"># And on auction results</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="va">auction_results</span><span class="op">)</span></span>
+<span><span class="co">#&gt;   rank      couple reserve auction_result profit total_winnings auction_order</span></span>
+<span><span class="co">#&gt; 1    1   brad_lara 1114000        1620000 506000         606000             1</span></span>
+<span><span class="co">#&gt; 2    2    dan_dani  992000        1440000 448000         448000             2</span></span>
+<span><span class="co">#&gt; 3    3 mike_andrew  966000        1400001 434001         434001             4</span></span>
+<span><span class="co">#&gt; 4    4 dale_sophie  975000        1330000 355000         355000             3</span></span>
+<span><span class="co">#&gt; 5    1  phil_amity 1375000        1670000 295000         395000             4</span></span>
+<span><span class="co">#&gt; 6    2  josh_jenna 1375000        1650000 275000         275000             1</span></span>
+<span><span class="co">#&gt;   season bought_by amount_sold_for_after_auction total_profit</span></span>
+<span><span class="co">#&gt; 1      5      &lt;NA&gt;                            NA           NA</span></span>
+<span><span class="co">#&gt; 2      5      &lt;NA&gt;                            NA           NA</span></span>
+<span><span class="co">#&gt; 3      5      &lt;NA&gt;                            NA           NA</span></span>
+<span><span class="co">#&gt; 4      5      &lt;NA&gt;                            NA           NA</span></span>
+<span><span class="co">#&gt; 5      6      &lt;NA&gt;                            NA           NA</span></span>
+<span><span class="co">#&gt; 6      6      &lt;NA&gt;                            NA           NA</span></span></code></pre></div>
+</div>
 </div>
   </main><aside class="col-md-3"><div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
-<li>`use_mit_license()`, `use_gpl3_license()` or friends to pick a license</li>
+<li><a href="LICENSE.html">Full license</a></li>
+<li><small><a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
 
@@ -67,7 +113,7 @@
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>First Last <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/YOUR-ORCID-ID" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Michael Lydeamore <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0001-6515-827X" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
 </ul>
 </div>
 
@@ -78,7 +124,7 @@
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by First Last.</p>
+  <p>Developed by Michael Lydeamore.</p>
 </div>
 
 <div class="pkgdown-footer-right">
