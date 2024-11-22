@@ -1,0 +1,9 @@
+pandoc: 3.1.11
+pkgdown: 2.1.1
+pkgdown_sha: ~
+articles:
+  theblock: theblock.html
+last_built: 2024-11-22T08:51Z
+urls:
+  reference: http://www.michaellydeamore.com/theblock/reference
+  article: http://www.michaellydeamore.com/theblock/articles
