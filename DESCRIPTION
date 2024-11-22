@@ -4,8 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Michael", "Lydeamore", , "michael.lydeamore@monash.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-6515-827X"))
-Description: Weekly room wins, by team and judge, and auction results for Seasons 5 to 19 of the Australian
-Reality TV Series "The Block".
+Description: Weekly room wins, by team and judge, and auction results for Seasons 5 to 19 of the Australian Reality TV Series The Block.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

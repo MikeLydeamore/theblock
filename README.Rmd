@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# theblock
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+`theblock` provides data on Weekly room wins, by team and judge, and auction results for Seasons 5 to 19 of the Australian Reality TV Series "The Block".
+
+## Installation
+
+You can install the development version of theblock from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("MikeLydeamore/theblock")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(theblock)
+
+# Data on weekly room wins
+head(room_results)
+
+# And on auction results
+head(auction_results)
+```
