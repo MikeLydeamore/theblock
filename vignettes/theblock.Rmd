@@ -33,7 +33,7 @@ We can get the number of room wins by looking in the `room_results` dataset as f
 room_wins <- room_results |>
   filter(judge == "Total") |>
   group_by(season, week, area) |>
-  reframe(winning_score = max(score), winning_team = team[score == winning_score]) |>
+  reframe(winning_score = max(score), winning_team = couple[score == winning_score]) |>
   group_by(season) |>
   count(winning_team)
 
@@ -65,6 +65,6 @@ result <- auction_results |>
 cor.test(result$rank, result$n)
 ```
 
-Note that because we are testing ranks, this function is actually equivalent to `cor.test(method="spearman")`. The small p-value indicates that it is *likely* that room wins is correlated with auction rank. There is a negative correlation, indicating that less wins is associated with less profit overall.
+Note that because we are testing ranks, this function is actually equivalent to `cor.test(method="spearman")`. The  p-value indicates that it is *not likely* that room wins is correlated with auction rank. There is a negative correlation, indicating that less wins is associated with less profit overall.
 
-There is `r result |> filter(rank == 1, n == 1) |> nrow()` results where a team with only one room win ended up winning the auction. There is also `r result |> filter(rank == 5, n == 5) |> nrow()` team who won 
+There is `r result |> filter(rank == 1, n == 1) |> nrow()` results where a team with only one room win ended up winning the auction. There is also `r result |> filter(rank == 5, n == 5) |> nrow()` team who won five rooms (out of 12), but famously came last in the auction on their season. Interestingly, Ronnie & Georgia also competed on Season 13, where they came third in the auction.
