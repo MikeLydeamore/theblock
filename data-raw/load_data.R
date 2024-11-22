@@ -8,7 +8,7 @@ auction_results <- lapply(seasons, function(season) {
   result <- readr::read_csv(paste0("data-raw/auction_results_season_", season, ".csv"))
 
   if (any(is.na(result$rank))) {
-    result$rank <- rank(result$profit)
+    result$rank <- rank(-result$profit)
   }
 
   result$season <- season
@@ -21,7 +21,7 @@ usethis::use_data(auction_results, overwrite = TRUE)
 
 room_results <- lapply(seasons, function(season) {
   result <- readr::read_csv(paste0("data-raw/room_scores_season_", season, ".csv")) |>
-    tidyr::pivot_longer(!c(week, area, scores), names_to = "team", values_to = "score") |>
+    tidyr::pivot_longer(!c(week, area, scores), names_to = "couple", values_to = "score") |>
     rename(judge = "scores")
 
   result$season <- season
