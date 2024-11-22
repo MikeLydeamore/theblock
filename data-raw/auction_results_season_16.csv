@@ -1,6 +1,6 @@
-"rank","couple","reserve","auction_result","profit","total_winnings","auction_order"
-NA,"jimmy_tam",3290000,4256000,966000,NA,2
-NA,"sarah_george",3350000,4000002,650002,650002,3
-NA,"harry_tash",3350000,4e+06,650000,650000,5
-NA,"luke_jasmin",3350000,3856000,506000,506000,1
-NA,"daniel_jade",3340000,3800000,460000,460000,4
+rank,couple,reserve,auction_result,profit,total_winnings,auction_order
+NA,jimmy_tam,3290000,4256000,966000,1066000,2
+NA,sarah_george,3350000,4000002,650002,650002,3
+NA,harry_tash,3350000,4.00E+06,650000,650000,5
+NA,luke_jasmin,3350000,3856000,506000,506000,1
+NA,daniel_jade,3340000,3800000,460000,460000,4

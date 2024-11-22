@@ -1,3 +1,5 @@
+library(readr)
+library(dplyr)
 ## Auction results
 
 seasons <- 5:19

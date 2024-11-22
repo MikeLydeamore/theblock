@@ -18,6 +18,8 @@ knitr::opts_chunk$set(
 library(theblock)
 library(ggplot2)
 library(dplyr)
+library(tidyr)
+library(ggbeeswarm)
 ```
 
 There are two datasets provided by this package:
@@ -35,10 +37,10 @@ room_wins <- room_results |>
   group_by(season) |>
   count(winning_team)
 
-room_wins |> filter(is.na(winning_team))
+room_wins
 ```
 
-We can then compare 
+We can then plot the number of room wins against the auction results (by rank). Note that we don't want to compare total dollars won, as over the seasons (generally) profits have increased, properties have gotten bigger, and general real estate prices have grown in Australia. 
 
 ```{r}
 auction_results |>
@@ -50,7 +52,9 @@ auction_results |>
   labs(x = "Auction profit rank", y = "Number of room wins")
 ```
 
+In this plot, we are looking for a top-left to bottom-right trend. This would indicate that teams with a lot of room wins (high on the y-axis) make the most money (left on the x-axis). There certainly is a cluster of points in the top-right, but the overall trend is hard to spot.
 
+We can do a formal statistical test of the rank against profit as follows:
 
 ```{r}
 result <- auction_results |>
@@ -58,6 +62,9 @@ result <- auction_results |>
   full_join(room_wins, by = c("season"="season", "couple"="winning_team")) |>
   replace_na(list(n = 0))
 
-kruskal.test(result$rank, result$n)
 cor.test(result$rank, result$n)
 ```
+
+Note that because we are testing ranks, this function is actually equivalent to `cor.test(method="spearman")`. The small p-value indicates that it is *likely* that room wins is correlated with auction rank. There is a negative correlation, indicating that less wins is associated with less profit overall.
+
+There is `r result |> filter(rank == 1, n == 1) |> nrow()` results where a team with only one room win ended up winning the auction. There is also `r result |> filter(rank == 5, n == 5) |> nrow()` team who won 
